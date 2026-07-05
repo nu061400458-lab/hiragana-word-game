@@ -1,0 +1,352 @@
+/* ----------------------------
+   全体
+---------------------------- */
+
+body {
+    margin: 0;
+    padding: 20px;
+
+    background: #FFF8DC;
+
+    font-family: "Yu Gothic UI", "Meiryo", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* ----------------------------
+   画面
+---------------------------- */
+
+.screen {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ----------------------------
+   タイトル
+---------------------------- */
+
+h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ----------------------------
+   説明
+---------------------------- */
+
+.description {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* ----------------------------
+   入力欄
+---------------------------- */
+
+#word-input {
+
+    width: 500px;
+    max-width: 90%;
+
+    font-size: 40px;
+
+    text-align: center;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    border: 3px solid #999;
+
+    margin-bottom: 30px;
+}
+
+/* ----------------------------
+   ボタン
+---------------------------- */
+
+button {
+
+    font-size: 32px;
+
+    padding: 15px 40px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    background: #4CAF50;
+
+    color: white;
+
+    transition: 0.2s;
+}
+
+button:hover {
+
+    background: #43A047;
+}
+
+button:disabled {
+
+    background: #BBBBBB;
+
+    cursor: default;
+}
+
+/* ----------------------------
+   完成した文字
+---------------------------- */
+
+#completed-word {
+
+    min-height: 90px;
+
+    font-size: 72px;
+
+    font-weight: bold;
+
+    color: #222;
+
+    margin-top: 10px;
+
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+/* ----------------------------
+   メッセージ
+---------------------------- */
+
+#message {
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    height: 60px;
+
+    margin-bottom: 40px;
+}
+
+/* ----------------------------
+   ４択
+---------------------------- */
+
+.choices {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 170px);
+
+    gap: 30px;
+
+    justify-content: center;
+
+    margin-bottom: 40px;
+}
+
+/* ----------------------------
+   ひらがなボタン
+---------------------------- */
+
+.choice {
+
+    width: 170px;
+
+    height: 170px;
+
+    font-size: 72px;
+
+    font-weight: bold;
+
+    border-radius: 20px;
+
+    background: white;
+
+    border: 5px solid #4CAF50;
+
+    color: #222;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.choice:hover {
+
+    transform: scale(1.05);
+
+    background: #E8F5E9;
+}
+
+/* ----------------------------
+   正解
+---------------------------- */
+
+.choice.correct {
+
+    background: #81C784;
+
+    color: white;
+
+    border-color: #2E7D32;
+}
+
+/* ----------------------------
+   不正解
+---------------------------- */
+
+.choice.wrong {
+
+    background: #DDDDDD;
+
+    color: #888888;
+
+    border-color: #AAAAAA;
+
+    cursor: default;
+}
+
+/* ----------------------------
+   次へ
+---------------------------- */
+
+#next-button {
+
+    margin-top: 20px;
+}
+
+/* ----------------------------
+   完成画面
+---------------------------- */
+
+#final-word {
+
+    font-size: 90px;
+
+    font-weight: bold;
+
+    color: #E53935;
+
+    margin: 50px 0;
+}
+
+/* ----------------------------
+   スマホ対応
+---------------------------- */
+
+@media (max-width: 700px) {
+
+    h1 {
+
+        font-size: 36px;
+    }
+
+    .description {
+
+        font-size: 22px;
+    }
+
+    #word-input {
+
+        font-size: 30px;
+    }
+
+    #completed-word {
+
+        font-size: 56px;
+    }
+
+    #message {
+
+        font-size: 34px;
+    }
+
+    .choices {
+
+        grid-template-columns: repeat(2, 130px);
+
+        gap: 20px;
+    }
+
+    .choice {
+
+        width: 130px;
+
+        height: 130px;
+
+        font-size: 56px;
+    }
+
+    button {
+
+        font-size: 24px;
+    }
+
+    #final-word {
+
+        font-size: 64px;
+    }
+}
+
+/* ----------------------------
+   上部バー
+---------------------------- */
+
+.top-bar{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:flex-start;
+
+    margin-bottom:25px;
+
+}
+
+/* ----------------------------
+   あたらしくあそぶ
+---------------------------- */
+
+.home-button{
+
+    background:#FF9800;
+
+    color:white;
+
+    font-size:26px;
+
+    padding:15px 28px;
+
+    border-radius:18px;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition:0.2s;
+
+}
+
+.home-button:hover{
+
+    background:#F57C00;
+
+}

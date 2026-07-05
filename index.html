@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ひらがなタップゲーム</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 入力画面 -->
+    <div id="input-screen" class="screen">
+
+        <h1>ひらがな を にゅうりょく してね</h1>
+
+        <p class="description">
+            1～30 もじ の ひらがな を にゅうりょく してね
+        </p>
+
+        <input
+            type="text"
+            id="word-input"
+            maxlength="30"
+            placeholder="みほん：りんご"
+            autocomplete="off"
+        >
+
+        <br>
+
+        <button id="start-button">
+            にゅうりょく できたら ここを おしてね
+        </button>
+
+    </div>
+
+
+    <!-- ゲーム画面 -->
+      <div id="game-screen" class="screen hidden">
+        <!-- あたらしくあそぶ -->
+         <div class="top-bar">
+            <button id="home-button" class="home-button">
+                🔄 あたらしく あそぶ
+            </button>
+        </div>
+
+        <!-- 完成した文字 -->
+        <div id="completed-word"></div>
+
+        <!-- メッセージ -->
+        <div id="message"></div>
+
+        <!-- 4択 -->
+        <div id="choices" class="choices"></div>
+
+        <!-- 次へ -->
+        <button id="next-button" class="hidden">
+            つぎへ
+        </button>
+
+    </div>
+
+
+
+    <!-- 終了画面 -->
+    <div id="finish-screen" class="screen hidden">
+
+        <h1>🎉 せいこう！</h1>
+
+        <div id="final-word"></div>
+
+        <button id="restart-button">
+            もういちど あそぶ
+        </button>
+
+    </div>
+
+
+    <!-- 効果音 -->
+    <audio id="correct-sound" src="sounds/correct.mp3"></audio>
+    <audio id="wrong-sound" src="sounds/wrong.mp3"></audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
