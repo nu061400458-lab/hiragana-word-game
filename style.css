@@ -152,9 +152,9 @@ button:disabled {
 
     display: grid;
 
-    grid-template-columns: repeat(2, 170px);
+    grid-template-columns: repeat(2, 145px);
 
-    gap: 30px;
+    gap: 22px;
 
     justify-content: center;
 
@@ -167,11 +167,11 @@ button:disabled {
 
 .choice {
 
-    width: 170px;
+    width: 145px;
 
-    height: 170px;
+    height: 145px;
 
-    font-size: 72px;
+    font-size: 62px;
 
     font-weight: bold;
 
@@ -331,11 +331,11 @@ button:disabled {
 
     color:white;
 
-    font-size:26px;
+    font-size:16px;
 
-    padding:15px 28px;
+    padding:8px 14px;
 
-    border-radius:18px;
+    border-radius:10px;
 
     border:none;
 
@@ -345,8 +345,18 @@ button:disabled {
 
 }
 
-.home-button:hover{
+/* ----------------------------
+   進捗表示
+---------------------------- */
 
-    background:#F57C00;
+#progress{
+
+    font-size:52px;
+
+    font-weight:bold;
+
+    color:#1565C0;
+
+    margin-bottom:30px;
 
 }
