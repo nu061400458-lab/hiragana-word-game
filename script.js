@@ -141,6 +141,8 @@ startButton.addEventListener("click", ()=>{
 
 function createQuestion(){
 
+    document.getElementById("progress").textContent = `${currentIndex + 1}もじ め（ぜんぶで ${targetWord.length}もじ）`;
+
     message.textContent = "";
 
     nextButton.classList.add("hidden");
