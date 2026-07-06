@@ -3,12 +3,13 @@
 ---------------------------- */
 
 body {
+
     margin: 0;
     padding: 20px;
 
     background: #FFF8DC;
 
-    font-family: "Yu Gothic UI", "Meiryo", sans-serif;
+    font-family: "Zen Maru Gothic", sans-serif;
 
     display: flex;
     justify-content: center;
