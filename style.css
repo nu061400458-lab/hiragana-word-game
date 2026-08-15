@@ -361,3 +361,42 @@ button:disabled {
     margin-bottom:30px;
 
 }
+
+
+
+/* ----------------------------
+   べつのげーむであそぶ
+---------------------------- */
+
+.back-home {
+
+    position: fixed;
+
+    top: 30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 300px;
+    height: 90px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background: #D00000;
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-radius: 16px;
+
+}
