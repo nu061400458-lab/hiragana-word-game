@@ -13,7 +13,7 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     min-height: 100vh;
     box-sizing: border-box;
@@ -369,34 +369,19 @@ button:disabled {
 ---------------------------- */
 
 .back-home {
+    position: absolute;
 
-    position: fixed;
-
-    top: 30px;
+    top: 8px;
     left: 50%;
 
     transform: translateX(-50%);
 
-    width: 300px;
-    height: 90px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    box-sizing: border-box;
-
-    background: #D00000;
-
-    color: white;
-
-    font-size: 28px;
-
+    font-size: 20px;
     font-weight: bold;
 
-    text-decoration: none;
+    color: #5E2A84;
 
-    border-radius: 16px;
+    text-decoration: underline;
 
+    white-space: nowrap;
 }
